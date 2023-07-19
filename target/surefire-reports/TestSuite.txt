@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 20.872 s <<< FAILURE! - in TestSuite
+setUp(com.izaanschool.loginpagetest.NegativeLogInTests)  Time elapsed: 20.809 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LAPTOP-SHEJUTI', ip: '192.168.254.77', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: driver.version: ChromeDriver
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:37034/status] to be available after 20010 ms
+Caused by: java.util.concurrent.TimeoutException
+
+tearDown(com.izaanschool.loginpagetest.NegativeLogInTests)  Time elapsed: 20.81 s  <<< FAILURE!
+java.lang.NullPointerException
+
