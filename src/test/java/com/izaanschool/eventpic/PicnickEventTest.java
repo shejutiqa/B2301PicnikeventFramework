@@ -13,6 +13,10 @@ public class PicnickEventTest extends BaseTest {
         picnickEventPage.openPage();//open page call
         picnickEventPage.eventRegistration("sharmin","sharmin@gmail.com","12367890");
 
+        picnickEventPage.dropdownAdultSelect(4);
+        picnickEventPage.dropdownchildrenselect(2);
+        picnickEventPage.submit();
+        picnickEventPage.pressAlertOkButton();
 
     }
 

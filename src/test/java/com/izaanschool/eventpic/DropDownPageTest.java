@@ -16,8 +16,9 @@ public class DropDownPageTest extends BaseTest {
 
 
 
-//select no of adult using index no.3 and get the text
+//select no of adult using index no.4 and get the text
        String actualAdultNumber=picnickEventPage.dropdownAdultSelect(4);
+        //Assert.assertEquals(actualAdultNumber,"4");
         Assert.assertEquals(actualAdultNumber,"4");
 
 

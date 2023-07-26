@@ -1,5 +1,6 @@
 package com.izaanschool.page;
 
+import com.google.common.io.PatternFilenameFilter;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -47,17 +48,20 @@ public class PicnickEventPage  extends BasePageObject {
 //        return noOfAdult;
 //
 //    }
-
-
     public String dropdownAdultSelect(int x) {
         Select dropdownAdult = new Select(find(noOfAdultBoxLocator));
         dropdownAdult.selectByIndex(x);
         String noOfAudlt = dropdownAdult.getFirstSelectedOption().getText();
         log.info(noOfAudlt);
         return noOfAudlt;
-
     }
-
+    public String dropdownchildrenselect(int y){
+        Select children=new Select(find(noOfChildrenBoxLocator));
+        children.selectByIndex(y);
+         String noofchildren= children.getFirstSelectedOption().getText();
+         log.info(noofchildren);
+         return noofchildren;
+    }
 
     public void submit () {
             click(submitButtonLocator);
@@ -65,7 +69,8 @@ public class PicnickEventPage  extends BasePageObject {
 
         public void pressAlertOkButton () {
             switchToAlert().accept();
-            //alert.accept();
+
+
         }
 
 
